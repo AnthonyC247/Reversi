@@ -6,7 +6,7 @@ import numpy as np
 pygame.init()
 size = width, height = 500, 500
 screen = pygame.display.set_mode(size) #To correspond with the appropriate display of the game
-pygame.display.set_caption("Reversi")
+pygame.display.set_caption("Reversi/Othello") #Display the title of the game
 
 #Set up the colors of the screen
 black = (0, 0, 0)
@@ -15,7 +15,7 @@ green = (0, 128, 0)
 red = (255, 0, 0)
 
 #Board and game constraints
-rows, cols = 8
+rows, cols = 8 #An 8x8 board representation of the game for the output 
 square_size = width // cols
 
 #create the initial game board 
